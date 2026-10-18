@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#070b16"/>
+  
+  <!-- Subtle Grid -->
+  <defs>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grid)"/>
+
+  <!-- Technical Header Overlay -->
+  <text x="35" y="45" font-family="'JetBrains Mono', monospace" font-size="12" fill="#00f2fe" letter-spacing="2">[RTL::TRAFFIC_CONTROLLER_FSM.v]</text>
+  <text x="765" y="45" font-family="'JetBrains Mono', monospace" font-size="12" fill="#64748b" text-anchor="end">CLK_FREQ: 50MHz // DIVIDER: 1Hz</text>
+
+  <!-- Verilog Code Snippet Visual on Left -->
+  <rect x="35" y="75" width="270" height="330" rx="8" fill="#0d1527" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="35" y="75" width="270" height="32" rx="8" fill="#131e36"/>
+  <circle cx="55" cy="91" r="4" fill="#ef4444"/>
+  <circle cx="69" cy="91" r="4" fill="#eab308"/>
+  <circle cx="83" cy="91" r="4" fill="#22c55e"/>
+  <text x="105" y="95" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">traffic_fsm.v</text>
+
+  <text x="50" y="130" font-family="'JetBrains Mono', monospace" font-size="11" fill="#c084fc">module <tspan fill="#38bdf8">traffic_controller</tspan> (</text>
+  <text x="65" y="150" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">input wire clk, rst_n,</text>
+  <text x="65" y="170" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">output reg [2:0] ns_lights,</text>
+  <text x="65" y="190" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">output reg [2:0] ew_lights</text>
+  <text x="50" y="210" font-family="'JetBrains Mono', monospace" font-size="11" fill="#c084fc">);</text>
+  <text x="50" y="235" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">// State Encoding</text>
+  <text x="50" y="255" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">parameter S0_NS_GREEN = 2'b00;</text>
+  <text x="50" y="275" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">parameter S1_NS_YELLOW= 2'b01;</text>
+  <text x="50" y="295" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">parameter S2_EW_GREEN = 2'b10;</text>
+  <text x="50" y="315" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">parameter S3_EW_YELLOW= 2'b11;</text>
+  <text x="50" y="345" font-family="'JetBrains Mono', monospace" font-size="10" fill="#c084fc">always @(posedge clk)</text>
+  <text x="65" y="365" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">if (!rst_n) state &lt;= S0;</text>
+  <text x="65" y="385" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">else state &lt;= next_state;</text>
+
+  <!-- FSM Transition Diagram on Right -->
+  <rect x="330" y="75" width="435" height="330" rx="8" fill="#0d1527" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- State S0 -->
+  <circle cx="440" cy="160" r="42" fill="#070a13" stroke="#22c55e" stroke-width="2.5"/>
+  <text x="440" y="155" font-family="'JetBrains Mono', monospace" font-size="12" fill="#22c55e" text-anchor="middle" font-weight="bold">S0</text>
+  <text x="440" y="172" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle">NS_G / EW_R</text>
+
+  <!-- State S1 -->
+  <circle cx="650" cy="160" r="42" fill="#070a13" stroke="#eab308" stroke-width="2.5"/>
+  <text x="650" y="155" font-family="'JetBrains Mono', monospace" font-size="12" fill="#eab308" text-anchor="middle" font-weight="bold">S1</text>
+  <text x="650" y="172" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle">NS_Y / EW_R</text>
+
+  <!-- State S2 -->
+  <circle cx="650" cy="310" r="42" fill="#070a13" stroke="#22c55e" stroke-width="2.5"/>
+  <text x="650" y="305" font-family="'JetBrains Mono', monospace" font-size="12" fill="#22c55e" text-anchor="middle" font-weight="bold">S2</text>
+  <text x="650" y="322" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle">NS_R / EW_G</text>
+
+  <!-- State S3 -->
+  <circle cx="440" cy="310" r="42" fill="#070a13" stroke="#eab308" stroke-width="2.5"/>
+  <text x="440" y="305" font-family="'JetBrains Mono', monospace" font-size="12" fill="#eab308" text-anchor="middle" font-weight="bold">S3</text>
+  <text x="440" y="322" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle">NS_R / EW_Y</text>
+
+  <!-- State Transitions Arrows -->
+  <path d="M 482 160 L 608 160" stroke="#00f2fe" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="4 2"/>
+  <path d="M 650 202 L 650 268" stroke="#00f2fe" stroke-width="2" stroke-dasharray="4 2"/>
+  <path d="M 608 310 L 482 310" stroke="#00f2fe" stroke-width="2" stroke-dasharray="4 2"/>
+  <path d="M 440 268 L 440 202" stroke="#00f2fe" stroke-width="2" stroke-dasharray="4 2"/>
+
+  <!-- Transition Labels -->
+  <text x="545" y="150" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8" text-anchor="middle">t == T_GREEN</text>
+  <text x="665" y="240" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8">t == T_YELLOW</text>
+  <text x="545" y="328" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8" text-anchor="middle">t == T_GREEN</text>
+  <text x="425" y="240" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8" text-anchor="end">t == T_YELLOW</text>
+
+  <!-- Waveform Preview at bottom right -->
+  <path d="M 350 375 H 370 V 360 H 390 V 375 H 410 V 360 H 430 V 375 H 450 V 360 H 470 V 375 H 490 V 360 H 510 V 375 H 530 V 360 H 550 V 375 H 570 V 360 H 590 V 375 H 610 V 360 H 630 V 375 H 650 V 360 H 670 V 375 H 690 V 360 H 710 V 375 H 730" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+  <text x="350" y="398" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b">SIMULATION: ModelSim Waveform Clock Bus Verified</text>
+</svg>

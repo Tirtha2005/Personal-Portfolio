@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#070b16"/>
+  <defs>
+    <pattern id="grid6" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#grid6)"/>
+
+  <!-- Technical Header -->
+  <text x="35" y="45" font-family="'JetBrains Mono', monospace" font-size="12" fill="#00f2fe" letter-spacing="2">[ANALYTICS::AI_DATA_ANALYST_PIPELINE]</text>
+  <text x="765" y="45" font-family="'JetBrains Mono', monospace" font-size="12" fill="#eab308" text-anchor="end">WORK IN PROGRESS // ARCHITECTURAL PROTOTYPE</text>
+
+  <!-- Left: File Ingestion (CSV / XLSX) -->
+  <rect x="40" y="80" width="210" height="320" rx="8" fill="#0d1527" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="40" y="80" width="210" height="35" rx="8" fill="#131e36"/>
+  <text x="55" y="103" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8">INGESTION ENGINE</text>
+
+  <!-- File Upload card -->
+  <rect x="55" y="130" width="180" height="85" rx="6" fill="#070a13" stroke="#00f2fe" stroke-dasharray="3 3"/>
+  <text x="145" y="165" font-family="'JetBrains Mono', monospace" font-size="10" fill="#00f2fe" text-anchor="middle">data_clean.csv</text>
+  <text x="145" y="185" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b" text-anchor="middle">12,450 Rows • 14 Features</text>
+
+  <!-- Extracted Schema -->
+  <text x="55" y="245" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">SCHEMA PARSER:</text>
+  <text x="55" y="270" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">✓ timestamp: datetime64</text>
+  <text x="55" y="290" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">✓ sensor_voltage: float32</text>
+  <text x="55" y="310" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">✓ error_flags: uint8</text>
+  <text x="55" y="340" font-family="'JetBrains Mono', monospace" font-size="8" fill="#22c55e">Data Profiling Complete</text>
+
+  <!-- Arrow -->
+  <path d="M 250 240 H 290" stroke="#00f2fe" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Center: Natural Language Query & LLM Processor -->
+  <rect x="290" y="80" width="210" height="320" rx="8" fill="#0d1527" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="290" y="80" width="210" height="35" rx="8" fill="#131e36"/>
+  <text x="305" y="103" font-family="'JetBrains Mono', monospace" font-size="11" fill="#c084fc">NATURAL QUERY LLM</text>
+
+  <rect x="305" y="130" width="180" height="60" rx="4" fill="#070a13" stroke="#8b5cf6"/>
+  <text x="315" y="152" font-family="'JetBrains Mono', monospace" font-size="8" fill="#c084fc">&gt; "Which variables show peak</text>
+  <text x="315" y="167" font-family="'JetBrains Mono', monospace" font-size="8" fill="#c084fc">   variance over time?"</text>
+
+  <rect x="305" y="210" width="180" height="160" rx="4" fill="#070a13" stroke="#1e293b"/>
+  <text x="315" y="235" font-family="'JetBrains Mono', monospace" font-size="9" fill="#22c55e">AI INSIGHT GENERATOR</text>
+  <text x="315" y="260" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">• Feature 03 variance spike</text>
+  <text x="315" y="278" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">  correlates with temp +18%</text>
+  <text x="315" y="296" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">• 3 outlier clusters detected</text>
+  <text x="315" y="325" font-family="'JetBrains Mono', monospace" font-size="8" fill="#eab308">Generating Visual Plot...</text>
+
+  <!-- Arrow -->
+  <path d="M 500 240 H 540" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Right: Dynamic Chart & Visual Explorer -->
+  <rect x="540" y="80" width="220" height="320" rx="8" fill="#0d1527" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="540" y="80" width="220" height="35" rx="8" fill="#131e36"/>
+  <text x="555" y="103" font-family="'JetBrains Mono', monospace" font-size="11" fill="#00f2fe">DYNAMIC VIZ DASH</text>
+
+  <!-- Bar Chart preview -->
+  <rect x="555" y="130" width="190" height="130" rx="4" fill="#070a13" stroke="#1e293b"/>
+  <rect x="575" y="200" width="18" height="50" rx="2" fill="#0284c7"/>
+  <rect x="605" y="170" width="18" height="80" rx="2" fill="#00f2fe"/>
+  <rect x="635" y="150" width="18" height="100" rx="2" fill="#8b5cf6"/>
+  <rect x="665" y="180" width="18" height="70" rx="2" fill="#0284c7"/>
+  <rect x="695" y="160" width="18" height="90" rx="2" fill="#38bdf8"/>
+  <line x1="565" y1="250" x2="725" y2="250" stroke="#64748b" stroke-width="1"/>
+
+  <text x="555" y="290" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">EXPORT &amp; SUMMARY:</text>
+  <text x="555" y="310" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">Interactive SVG / PDF report</text>
+  <text x="555" y="330" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">Session History cached locally</text>
+  <text x="555" y="360" font-family="'JetBrains Mono', monospace" font-size="8" fill="#22c55e">Prototype UI Functional</text>
+</svg>

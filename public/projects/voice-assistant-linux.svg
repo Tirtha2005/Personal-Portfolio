@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#070b16"/>
+  <defs>
+    <pattern id="gridVA" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#gridVA)"/>
+
+  <!-- Technical Header -->
+  <text x="35" y="45" font-family="'JetBrains Mono', monospace" font-size="12" fill="#00f2fe" letter-spacing="2">[VOICE_AI::LINUX_ASSISTANT_ENGINE]</text>
+  <text x="765" y="45" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b5cf6" text-anchor="end">SPEECH RECOGNITION // SYSTEM AUTOMATION</text>
+
+  <!-- Left: Audio Spectrum & STT -->
+  <rect x="40" y="80" width="220" height="320" rx="8" fill="#0d1527" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="40" y="80" width="220" height="35" rx="8" fill="#131e36"/>
+  <text x="55" y="103" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8">AUDIO SPECTRUM (MIC)</text>
+
+  <!-- Wave bars -->
+  <rect x="60" y="150" width="6" height="30" rx="2" fill="#00f2fe"/>
+  <rect x="72" y="135" width="6" height="60" rx="2" fill="#00f2fe"/>
+  <rect x="84" y="125" width="6" height="80" rx="2" fill="#38bdf8"/>
+  <rect x="96" y="140" width="6" height="50" rx="2" fill="#00f2fe"/>
+  <rect x="108" y="130" width="6" height="70" rx="2" fill="#8b5cf6"/>
+  <rect x="120" y="120" width="6" height="90" rx="2" fill="#c084fc"/>
+  <rect x="132" y="135" width="6" height="60" rx="2" fill="#8b5cf6"/>
+  <rect x="144" y="145" width="6" height="40" rx="2" fill="#38bdf8"/>
+  <rect x="156" y="130" width="6" height="70" rx="2" fill="#00f2fe"/>
+  <rect x="168" y="140" width="6" height="50" rx="2" fill="#00f2fe"/>
+  <rect x="180" y="155" width="6" height="20" rx="2" fill="#00f2fe"/>
+
+  <rect x="55" y="230" width="190" height="70" rx="6" fill="#070a13" stroke="#1e293b"/>
+  <text x="65" y="252" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">SPOKEN COMMAND:</text>
+  <text x="65" y="272" font-family="'JetBrains Mono', monospace" font-size="10" fill="#00f2fe">"Open terminal &amp;</text>
+  <text x="65" y="288" font-family="'JetBrains Mono', monospace" font-size="10" fill="#00f2fe"> list active ports"</text>
+
+  <text x="55" y="335" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">Sampling: 44.1 kHz PCM</text>
+  <text x="55" y="355" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">Noise Cancellation Filter: ON</text>
+  <text x="55" y="375" font-family="'JetBrains Mono', monospace" font-size="8" fill="#22c55e">✓ Voice Activity Detected (VAD)</text>
+
+  <!-- Flow Arrow -->
+  <path d="M 260 240 H 295" stroke="#00f2fe" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Center: Intent Parsing Engine -->
+  <rect x="295" y="80" width="220" height="320" rx="8" fill="#0d1527" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="295" y="80" width="220" height="35" rx="8" fill="#131e36"/>
+  <text x="310" y="103" font-family="'JetBrains Mono', monospace" font-size="11" fill="#c084fc">INTENT PARSER (NLP)</text>
+
+  <rect x="310" y="130" width="190" height="120" rx="6" fill="#070a13" stroke="#8b5cf6"/>
+  <text x="320" y="152" font-family="'JetBrains Mono', monospace" font-size="9" fill="#c084fc">INTENT CLASSIFICATION:</text>
+  <text x="320" y="172" font-family="'JetBrains Mono', monospace" font-size="8" fill="#f8fafc">Intent: SYS_NETWORK_QUERY</text>
+  <text x="320" y="190" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">Entity 01: 'terminal' [APP]</text>
+  <text x="320" y="208" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">Entity 02: 'ports' [NETSTAT]</text>
+  <text x="320" y="230" font-family="'JetBrains Mono', monospace" font-size="8" fill="#22c55e">Confidence: 97.4%</text>
+
+  <rect x="310" y="265" width="190" height="115" rx="6" fill="#070a13" stroke="#1e293b"/>
+  <text x="320" y="288" font-family="'JetBrains Mono', monospace" font-size="9" fill="#f8fafc">TTS RESPONSE GEN:</text>
+  <text x="320" y="308" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">Engine: Pyttsx3 / gTTS</text>
+  <text x="320" y="328" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">Auditory feedback: 'Listing</text>
+  <text x="320" y="344" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">active network ports now.'</text>
+
+  <!-- Flow Arrow -->
+  <path d="M 515 240 H 550" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Right: Linux Subsystem Command Execution -->
+  <rect x="550" y="80" width="210" height="320" rx="8" fill="#0d1527" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="550" y="80" width="210" height="35" rx="8" fill="#131e36"/>
+  <text x="565" y="103" font-family="'JetBrains Mono', monospace" font-size="11" fill="#22c55e">LINUX BASH DISPATCH</text>
+
+  <rect x="565" y="130" width="180" height="140" rx="6" fill="#070a13" stroke="#1e293b"/>
+  <text x="575" y="152" font-family="'JetBrains Mono', monospace" font-size="8" fill="#22c55e">$ sudo ss -tuln</text>
+  <text x="575" y="172" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">tcp LISTEN 0 128</text>
+  <text x="575" y="188" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">*:3000   (Next.js)</text>
+  <text x="575" y="204" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">tcp LISTEN 0 128</text>
+  <text x="575" y="220" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">*:8080   (HTTP)</text>
+  <text x="575" y="246" font-family="'JetBrains Mono', monospace" font-size="8" fill="#22c55e">✓ Subprocess Completed</text>
+
+  <rect x="565" y="285" width="180" height="95" rx="6" fill="#070a13" stroke="#1e293b"/>
+  <text x="575" y="308" font-family="'JetBrains Mono', monospace" font-size="9" fill="#f8fafc">SECURITY POLICIES:</text>
+  <text x="575" y="326" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">Whitelisted commands only</text>
+  <text x="575" y="344" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">Zero external API leak</text>
+  <text x="575" y="362" font-family="'JetBrains Mono', monospace" font-size="8" fill="#22c55e">Offline Operation Capable</text>
+</svg>

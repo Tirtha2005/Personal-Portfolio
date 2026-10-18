@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#070b16"/>
+  <defs>
+    <pattern id="grid8" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+    <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#8b5cf6" stop-opacity="0.5"/>
+      <stop offset="80%" stop-color="#070a13" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#070a13" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grid8)"/>
+
+  <!-- Technical Header -->
+  <text x="35" y="45" font-family="'JetBrains Mono', monospace" font-size="12" fill="#00f2fe" letter-spacing="2">[GRAPHICS::ULTRON_ORB_DYNAMIC_HUD]</text>
+  <text x="765" y="45" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8" text-anchor="end">60 FPS // MATHEMATICAL PARTICLE SPHERE</text>
+
+  <!-- Central Orb Visualization -->
+  <circle cx="400" cy="230" r="140" fill="url(#orbGlow)"/>
+
+  <!-- Orbital Wireframe Rings -->
+  <ellipse cx="400" cy="230" rx="130" ry="40" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="4 3" transform="rotate(-25 400 230)"/>
+  <ellipse cx="400" cy="230" rx="130" ry="40" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="6 4" transform="rotate(35 400 230)"/>
+  <ellipse cx="400" cy="230" rx="140" ry="50" stroke="#38bdf8" stroke-width="1" transform="rotate(85 400 230)"/>
+
+  <!-- Core Sphere Nodes -->
+  <circle cx="400" cy="230" r="8" fill="#ffffff"/>
+  <circle cx="360" cy="210" r="4" fill="#00f2fe"/>
+  <circle cx="440" cy="250" r="4" fill="#8b5cf6"/>
+  <circle cx="430" cy="190" r="3" fill="#00f2fe"/>
+  <circle cx="370" cy="270" r="3" fill="#c084fc"/>
+  <circle cx="410" cy="290" r="3.5" fill="#38bdf8"/>
+  <circle cx="390" cy="170" r="3.5" fill="#38bdf8"/>
+
+  <!-- Sensory Rays / Particles -->
+  <line x1="400" y1="230" x2="220" y2="120" stroke="#00f2fe" stroke-width="1" stroke-dasharray="2 4"/>
+  <line x1="400" y1="230" x2="590" y2="140" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="2 4"/>
+  <line x1="400" y1="230" x2="210" y2="330" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 4"/>
+  <line x1="400" y1="230" x2="600" y2="320" stroke="#00f2fe" stroke-width="1" stroke-dasharray="2 4"/>
+
+  <!-- Telemetry Overlay Blocks -->
+  <rect x="50" y="90" width="160" height="70" rx="4" fill="#0d1527" stroke="#00f2fe" stroke-width="1"/>
+  <text x="65" y="112" font-family="'JetBrains Mono', monospace" font-size="9" fill="#00f2fe">ANGULAR_VELOCITY</text>
+  <text x="65" y="130" font-family="'JetBrains Mono', monospace" font-size="12" fill="#f8fafc" font-weight="bold">ω = 2.45 rad/s</text>
+  <text x="65" y="148" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">Matrix Euler Transform</text>
+
+  <rect x="590" y="90" width="160" height="70" rx="4" fill="#0d1527" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="605" y="112" font-family="'JetBrains Mono', monospace" font-size="9" fill="#c084fc">PARTICLE_FIELD</text>
+  <text x="605" y="130" font-family="'JetBrains Mono', monospace" font-size="12" fill="#f8fafc" font-weight="bold">N = 1,024 Nodes</text>
+  <text x="605" y="148" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">GPU Buffer Instancing</text>
+
+  <rect x="50" y="300" width="160" height="70" rx="4" fill="#0d1527" stroke="#1e293b"/>
+  <text x="65" y="322" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8">CURSOR_INTERACTION</text>
+  <text x="65" y="340" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f8fafc">Reactive Warp: ON</text>
+  <text x="65" y="355" font-family="'JetBrains Mono', monospace" font-size="8" fill="#22c55e">Damping Coefficient: 0.08</text>
+
+  <rect x="590" y="300" width="160" height="70" rx="4" fill="#0d1527" stroke="#1e293b"/>
+  <text x="605" y="322" font-family="'JetBrains Mono', monospace" font-size="9" fill="#eab308">COLOR_THEMES</text>
+  <text x="605" y="340" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f8fafc">Cyber Cyan / Plasma</text>
+  <text x="605" y="355" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">Dynamic Shader Palette</text>
+</svg>
