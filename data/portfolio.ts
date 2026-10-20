@@ -335,13 +335,52 @@ export const PORTFOLIO_DATA = {
       image: "/projects/smart-attendance.svg",
     },
     {
+      id: "eyantra-mazesolver",
+      title: "Autonomous Maze Solver Robot — e-Yantra (IIT Bombay)",
+      category: "iot-robotics",
+      categoryLabel: "Embedded Robotics & Automation",
+      status: "Completed",
+      featured: true,
+      priority: 4,
+      metricsOrHighlight: "IIT Bombay e-Yantra Competition // National Qualifier // Autonomous Wall Following",
+      shortDescription:
+        "An autonomous maze-solving mobile robotic platform engineered for the prestigious national e-Yantra Robotics Competition (IIT Bombay), executing real-time sonar rangefinding, wall-following state logic, and dead-end backtrack algorithms.",
+      problem:
+        "Deterministic traversal through complex orthogonal labyrinths requires continuous distance tracking along narrow corridors, junction branching decisions, and turn stability without manual teleoperation.",
+      technicalApproach: [
+        "Integrated ultrasonic distance rangefinder array with microsecond echo timing to measure front, left, and right corridor wall clearances.",
+        "Formulated algorithmic wall-following state machine (Left-Hand Rule & modified Tremaux logic) to navigate labyrinth topologies.",
+        "Engineered differential drive motor control via PWM speed regulation on dual H-Bridge motor drivers.",
+        "Programmed precise 90-degree pivot turns, cell-by-cell forward steps, and 180-degree dead-end backtrack routines in embedded C/C++.",
+        "Optimized threshold distance comparators and sensor debounce filters to eliminate false boundary readings caused by acoustic reflections.",
+      ],
+      technologies: [
+        "Embedded C/C++",
+        "Microcontroller",
+        "Ultrasonic Sensors (HC-SR04)",
+        "Differential Drive",
+        "H-Bridge Motor Driver (L298N)",
+        "Maze Pathfinding",
+        "PWM Regulation",
+      ],
+      contribution:
+        "Architected the maze-solving decision algorithm, calibrated threshold clear distances, integrated motor driver circuitry, and validated navigation stability across test arenas for the e-Yantra national competition.",
+      learningOutcomes: [
+        "Autonomous obstacle boundary tracking and algorithmic path exploration in constrained spaces.",
+        "Real-time sensor timing, signal debounce, and motor driver noise isolation in embedded C/C++.",
+        "Tuning differential steering parameters to prevent wheel slippage and angular drift inside narrow maze corridors.",
+      ],
+      githubUrl: "https://github.com/Tirtha2005/e-yantra-mazesolver",
+      image: "/projects/eyantra-mazesolver.svg",
+    },
+    {
       id: "obstacle-avoidance-robot",
       title: "Autonomous Obstacle Avoidance Robot",
       category: "iot-robotics",
       categoryLabel: "Embedded Robotics",
       status: "Completed",
       featured: false,
-      priority: 4,
+      priority: 5,
       metricsOrHighlight: "Ultrasonic Pulse Timing + Servo Radar Sweep Algorithm",
       shortDescription:
         "A self-navigating mobile robot built during the Upskill Campus / UniConverge internship that detects physical obstacles and dynamically plots clear paths.",

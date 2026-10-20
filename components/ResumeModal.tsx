@@ -53,6 +53,7 @@ PRACTICAL INTERNSHIPS & TRAINING:
 
 KEY PROJECTS & HONORS:
 - TECHNOVATE 2K25 1st Place: Smart Attendance System with RFID & Camera Verification
+- Autonomous Maze Solver Robot — e-Yantra Robotics Competition (IIT Bombay)
 - Verilog-Based Traffic Light Controller (FSM in ModelSim & Quartus Prime)
 - Water Quality Monitoring & Risk Telemetry (Raspberry Pi, ADS1115, MQTT, IEEE ICIET 2026 Paper #1062)
     `.trim();

@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tirtha Rudra Shettigar — Personal Engineering Portfolio
 
-## Getting Started
+An engineering portfolio website engineered for **VLSI/RTL Design, Embedded Systems, IoT Robotics, and Applied AI/ML**. Designed with a high-contrast white aesthetic, glassmorphic cards, live interactive verification modals, and technical hardware/FSM schematics.
 
-First, run the development server:
+🌐 **GitHub Repository**: [https://github.com/Tirtha2005/Personal-Portfolio](https://github.com/Tirtha2005/Personal-Portfolio)  
+📄 **IEEE Published Research**: [IEEE Xplore #11712891](https://ieeexplore.ieee.org/abstract/document/11712891)  
+🤖 **e-Yantra Maze Solver**: [https://github.com/Tirtha2005/e-yantra-mazesolver](https://github.com/Tirtha2005/e-yantra-mazesolver)  
+
+---
+
+## 🚀 Key Highlights & Projects
+
+- **Autonomous Maze Solver Robot (e-Yantra — IIT Bombay)**: Sonar rangefinding array, Left-Hand Rule wall-following logic, and dead-end backtrack routines.
+- **Smart Attendance System with RFID & Camera Verification**: 🏆 **1st Place Winner** at TECHNOVATE 2K25 (National Level Technical Symposium).
+- **Verilog HDL Traffic Light Controller**: Moore FSM design, clock-divider modules, and timing simulation in ModelSim & Intel Quartus Prime.
+- **AI & IoT-Enabled Water Quality Monitoring**: Multi-sensor ADS1115 ADC data acquisition, MQTT telemetry, and ML risk classification published at IEEE ICIET 2026.
+- **Physical Design (PD) Training**: Comprehensive backend flow training with **VLSI Minds**.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16 (Turbopack App Router)](https://nextjs.org/)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4 + Custom Glassmorphism System
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Resume System**: Dynamic PDF stream endpoint with fallback static serving
+
+---
+
+## 💻 Local Development
+
+Clone the repository and run the local development server:
 
 ```bash
+git clone https://github.com/Tirtha2005/Personal-Portfolio.git
+cd Personal-Portfolio
+
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Deployment on Vercel
 
-## Learn More
+This repository is optimized for one-click deployment on **[Vercel](https://vercel.com)**:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push this repository to GitHub: `git push origin main`
+2. Go to [vercel.com/new](https://vercel.com/new)
+3. Import `Tirtha2005/Personal-Portfolio`
+4. Click **Deploy** (Vercel automatically detects Next.js with zero configuration needed)
